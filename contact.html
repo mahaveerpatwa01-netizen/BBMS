@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Contact - Blood Bank Management System</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<h1>Blood Bank Management System</h1>
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+</nav>
+</header>
+<main>
+<section>
+<h2>Contact Us</h2>
+<img src="images/contact1.jpg" alt="Contact">
+<form id="contactForm">
+<input type="text" placeholder="Name" required>
+<input type="email" placeholder="Email" required>
+<textarea placeholder="Message" required></textarea>
+<button type="submit">Send Message</button>
+</form>
+<p>Email: support@bloodbank.com</p>
+<p>Phone: +91 9876543210, +91 9123456780</p>
+<p>Hospitals providing blood:</p>
+<ul>
+<li>City Hospital - MG Road</li>
+<li>Red Cross Blood Bank - Shivaji Nagar</li>
+<li>LifeCare Hospital - Pune Station</li>
+</ul>
+</section>
+</main>
+<footer>
+<p>&copy; 2025 Blood Bank Management System</p>
+</footer>
+<script>
+document.getElementById("contactForm").addEventListener("submit", function(e){
+  e.preventDefault();
+  alert("Your message has been sent! Thank you for contacting us.");
+  this.reset();
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Blood Bank Management System</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+
+<header>
+<h1>Blood Bank Management System</h1>
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+</nav>
+</header>
+
+<main>
+<section class="hero">
+<img src="images/hero.jpg" alt="Blood Donation" class="hero-img">
+<h2>Every Drop Counts, Every Life Matters</h2>
+<p>Join us in saving lives. Register as a donor or request blood today!</p>
+<button onclick="showDonorForm()">Register as Donor</button>
+<button onclick="showReceiverForm()">Request Blood</button>
+</section>
+
+<section id="donorSection" style="display:none;">
+<h3>Donor Registration</h3>
+<form id="donorForm">
+<input type="text" placeholder="Name" required>
+<input type="number" placeholder="Age" required>
+<input type="tel" placeholder="Contact Number" required>
+<select required>
+<option value="">Select Blood Type</option>
+<option>A+</option><option>A-</option>
+<option>B+</option><option>B-</option>
+<option>O+</option><option>O-</option>
+<option>AB+</option><option>AB-</option>
+</select>
+<button type="submit">Submit</button>
+</form>
+</section>
+
+<section id="receiverSection" style="display:none;">
+<h3>Request Blood</h3>
+<form id="receiverForm">
+<input type="text" placeholder="Name" required>
+<input type="number" placeholder="Age" required>
+<select required>
+<option value="">Select Blood Type</option>
+<option>A+</option><option>A-</option>
+<option>B+</option><option>B-</option>
+<option>O+</option><option>O-</option>
+<option>AB+</option><option>AB-</option>
+</select>
+<input type="number" placeholder="Units Needed" required>
+<label>Physically Disabled:</label>
+<select required>
+<option>Yes</option>
+<option>No</option>
+</select>
+<button type="submit">Submit</button>
+</form>
+<div id="hospitalResults"></div>
+</section>
+
+</main>
+
+<footer>
+<p>&copy; 2025 Blood Bank Management System</p>
+</footer>
+
+</body>
+</html>
